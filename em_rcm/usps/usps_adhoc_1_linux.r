@@ -20,4 +20,4 @@ output=em_rcm_GM(train_small,mul)
 
 proc.time()
 
-## Test Github branch feature1
+## Test Github branch feature
