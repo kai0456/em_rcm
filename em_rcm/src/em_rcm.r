@@ -210,7 +210,9 @@ em_rcm_GM=function(x,mul,sgml=0,taul=0){
   mull=list(mul)   # 2 levels
   sgmll=list(sgml) # 3 levels
   taull=list(taul) # 2 levels
-  for (t in 1:100){
+  for (t in 1:20){
+	print(paste('The ',t,' iteration',proc.time()[3]))
+  
     mix=mix_rcm(x,mull[[t]],sgmll[[t]],taull[[t]])
     mull=c(mull,list(mix[[1]]))
     sgmll=c(sgmll,list(mix[[2]]))
